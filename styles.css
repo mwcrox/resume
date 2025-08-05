@@ -1,0 +1,126 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f8f9fa;
+    color: #333;
+    padding: 20px;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #222;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+/* Navigation Tabs */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li:hover,
+nav ul li.active {
+    background: #0077cc;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    background: #fff;
+    padding: 20px;
+    margin-top: -2px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Sections */
+h2 {
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.headshot {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0077cc;
+    margin: 0 auto 10px;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
